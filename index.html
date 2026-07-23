@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiya Elza Jabi — Full Stack & AI/ML</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Archivo+Black&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=Montserrat:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+<script>document.documentElement.dataset.theme=localStorage.getItem("jj-theme")||"dark"</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader"><span>JIYA ELZA JABI<b id="count">000</b></span></div>
+<div class="cursor-dot" id="cdot"></div>
+<div class="progress" id="progress"></div>
+<div class="sec-ind"><span id="secname">N°000 — Intro</span></div>
+
+<nav>
+  <a class="logo" href="#home">JJ<i>.</i></a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#works">Works</a>
+    <a href="#experience">Experience</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☀</button>
+    <a href="#contact" class="nav-cta">Contact →</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home" style="padding:0" data-sec="N°000 — Intro">
+  <div class="hero-bg"><canvas id="isoc"></canvas></div>
+  <div class="hero-vig"></div>
+  <div class="hero-top">
+    <div class="hi">Hi! I'm <span class="name">Jiya</span></div>
+    <div class="hero-tags"><b>Full Stack Developer</b> · <b>AI/ML Explorer</b> · MCA @ CHRIST, Bengaluru</div>
+    <div><span class="avail"><span class="pulse"></span> Open to internships & full-time roles</span></div>
+  </div>
+  <div class="score-pix" id="scorepix">SCORE<br>00</div>
+  <div class="game-note" id="gamenote"><b>Mini-game</b>Move your cursor to bounce the ball across the springs, or drag &amp; flick it — sink it in the hoop to score.<button id="gnclose" aria-label="Dismiss">×</button></div>
+  <div class="wire-wrap">
+    <svg viewBox="0 0 1160 170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+      <text x="50%" y="150" text-anchor="middle" class="wire-t" id="wire1">DEVELOPER</text>
+      <text x="50%" y="150" text-anchor="middle" class="wire-t wire-sub" id="wire2">DEVELOPER</text>
+    </svg>
+  </div>
+</section>
+
+<div class="strip"><div class="strip-track" id="strip1">
+  <span>FULL STACK&nbsp;</span><span class="x">×</span><span class="o">AI / ML&nbsp;</span><span class="x">×</span>
+  <span>FULL STACK&nbsp;</span><span class="x">×</span><span class="o">AI / ML&nbsp;</span><span class="x">×</span>
+  <span>FULL STACK&nbsp;</span><span class="x">×</span><span class="o">AI / ML&nbsp;</span><span class="x">×</span>
+</div></div>
+
+<section id="about" data-sec="N°001 — About">
+  <div class="idx"><b>N°001</b> About</div>
+  <div class="about-grid">
+    <div class="portrait fade-up">
+      <img src="assets/portrait.webp" alt="Line art of Jiya at a desk with a Nirvana tee, coffee mug, and laptop">
+      <div class="cap">Jiya Elza Jabi — Full Stack & AI/ML · Bengaluru, India</div>
+    </div>
+    <div>
+      <div class="about-big fade-up">Transforming ideas into exceptional digital <span class="it">experiences</span> through code and <span class="cr">curiosity.</span></div>
+      <p class="reveal-text">I am Jiya Elza Jabi, an MCA student at CHRIST (Deemed to be University), Bengaluru, and a full-stack developer working with React.js and FastAPI. At the university's Innovation Center, I build and deploy end-to-end modules for the ESPro ERP system — responsive interfaces, REST APIs, and production-ready features backed by SQL and vector databases.</p>
+      <p class="reveal-text">I've gone deep into applied AI/ML: a Retrieval-Augmented Generation pipeline built from scratch with pgvector and locally-hosted LLMs, an OCR-based claim verification system, and AI-assisted tools. I care about the details most people skip — clean APIs, responsive UI, and code a teammate can read six months later.</p>
+      <p class="reveal-text">Currently seeking full-stack and frontend roles in a growth-oriented team where I can build, break, and learn fast.</p>
+      <a class="dl" href="Jiya_Elza_Jabi_Resume.pdf" download><span>Download Resume</span><span>↓</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="skills" data-sec="N°002 — Skills">
+  <div class="idx"><b>N°002</b> Skills</div>
+  <h2 class="fade-up">My <span class="it">toolbox</span></h2>
+  <div style="margin-top:40px">
+    <div class="sk-group fade-up"><div class="cat">Frontend</div>
+      <div class="chips"><span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span><span class="chip">Responsive UI</span></div><div class="no">01</div></div>
+    <div class="sk-group fade-up"><div class="cat">Backend</div>
+      <div class="chips"><span class="chip">FastAPI</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">Go</span><span class="chip">Java</span><span class="chip">Python</span><span class="chip">PHP</span><span class="chip">REST APIs</span></div><div class="no">02</div></div>
+    <div class="sk-group fade-up"><div class="cat">AI / ML</div>
+      <div class="chips"><span class="chip">RAG pipelines</span><span class="chip">pgvector</span><span class="chip">Ollama</span><span class="chip">LangChain</span><span class="chip">Sentence-Transformers</span><span class="chip">Gemini AI</span><span class="chip">Tesseract OCR</span></div><div class="no">03</div></div>
+    <div class="sk-group fade-up"><div class="cat">Databases</div>
+      <div class="chips"><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Neo4j</span></div><div class="no">04</div></div>
+    <div class="sk-group fade-up"><div class="cat">Tools & More</div>
+      <div class="chips"><span class="chip">Docker</span><span class="chip">Docker Compose</span><span class="chip">Git/GitHub</span><span class="chip">C</span><span class="chip">Kotlin</span></div><div class="no">05</div></div>
+  </div>
+</section>
+
+<section class="hwrap" id="works" data-sec="N°003 — Selected works">
+  <div class="hpin" id="hpin">
+    <div class="htrack" id="htrack">
+      <div class="hintro">
+        <div class="idx"><b>N°003</b> Selected works</div>
+        <h2>Work that <span class="it">proves it</span></h2>
+        <p class="sub">Keep scrolling — the cards ride along. Every project links to the code.</p>
+      </div>
+      <a class="hcard" href="https://github.com/jelza04/Nutrilens-final" target="_blank">
+        <div><div class="pn">01</div><h3>NutriLens — food claim verification</h3>
+        <p>OCR-powered system that verifies food packaging claims against FSSAI guidelines — React.js dashboards and a FastAPI rule engine, tested on 18+ real-world products.</p></div>
+        <div class="foot"><div class="meta"><span class="tag">React.js</span><span class="tag">FastAPI</span><span class="tag">MySQL</span><span class="tag">Tesseract OCR</span><span class="tag">Docker</span></div>
+        <span class="arrow"><svg viewBox="0 0 24 24"><path d="M7 7h8.6L5.3 17.3l1.4 1.4L17 8.4V17h2V5H7v2z"/></svg></span></div>
+      </a>
+      <a class="hcard" href="https://github.com/jelza04/TadBuddy_2.0" target="_blank">
+        <div><div class="pn">02</div><h3>TADBuddy — Baymax-inspired health companion</h3>
+        <p>A Baymax-inspired mental healthcare chatbot. RAG pipeline built from scratch — no agent frameworks — with 384-dim semantic search in pgvector, answered by a locally-hosted Llama 3.2 via Ollama.</p></div>
+        <div class="foot"><div class="meta"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">pgvector</span><span class="tag">Ollama</span><span class="tag">Docker Compose</span></div>
+        <span class="arrow"><svg viewBox="0 0 24 24"><path d="M7 7h8.6L5.3 17.3l1.4 1.4L17 8.4V17h2V5H7v2z"/></svg></span></div>
+      </a>
+      <a class="hcard" href="https://github.com/jelza04/expenseVault" target="_blank">
+        <div><div class="pn">03</div><h3>ExpenseVault — Go budgeting CLI</h3>
+        <p>Personalized budgeting app for the terminal — an interactive TUI built in Go with Bubble Tea and Lip Gloss. Gemini AI analyzes spending patterns and generates financial insights.</p></div>
+        <div class="foot"><div class="meta"><span class="tag">Go</span><span class="tag">Bubble Tea</span><span class="tag">Gemini AI</span><span class="tag">MySQL</span></div>
+        <span class="arrow"><svg viewBox="0 0 24 24"><path d="M7 7h8.6L5.3 17.3l1.4 1.4L17 8.4V17h2V5H7v2z"/></svg></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="experience" data-sec="N°004 — Experience">
+  <div class="idx"><b>N°004</b> Experience & education</div>
+  <h2 class="serif fade-up">The trajectory<span class="cr">.</span></h2>
+  <div class="traj" id="traj">
+    <div class="traj-spine"></div><div class="traj-fill" id="trajfill"></div>
+    <div class="tyear">2026</div>
+    <div class="tjob right fade-up" style="--ac:#3ddbb4"><div class="seg"></div><div class="tcard">
+      <div class="thead"><h3>Full Stack Developer Intern</h3><span class="when">May 2026 — Present</span></div>
+      <div class="org">CHRIST University Innovation Center, Bengaluru</div>
+      <ul><li>Developing end-to-end web applications with React.js and FastAPI for the ESPro ERP system</li>
+      <li>Building RESTful APIs and backend services for core business logic and data processing</li>
+      <li>Integrating frontend interfaces with backend APIs and databases for scalable solutions</li></ul>
+    </div></div>
+    <div class="tjob left fade-up" style="--ac:#b3a2ec"><div class="seg"></div><div class="tcard">
+      <div class="thead"><h3>Frontend Developer Intern</h3><span class="when">Feb 2026 — May 2026</span></div>
+      <div class="org">CHRIST University Innovation Center, Bengaluru</div>
+      <ul><li>Developed responsive, user-friendly React.js interfaces with cross-browser compatibility</li>
+      <li>Integrated frontend components with backend APIs for dynamic data rendering</li></ul>
+    </div></div>
+    <div class="tyear">2025</div>
+    <div class="tjob right fade-up" style="--ac:#7fe0c3"><div class="seg"></div><div class="tcard">
+      <div class="thead"><h3>Education</h3><span class="when">2022 — 2027</span></div>
+      <div class="org">MCA · BSc Computer Science</div>
+      <ul><li>Master of Computer Applications — CHRIST (Deemed to be University), Bengaluru · 2025–27</li>
+      <li>BSc Computer Science — Nowrosjee Wadia College, Pune · 2022–25 · CGPA 7.74/10</li></ul>
+    </div></div>
+    <div class="tjob left fade-up" style="--ac:#b3a2ec"><div class="seg"></div><div class="tcard">
+      <div class="thead"><h3>Leadership & Certifications</h3><span class="when">2024 — Present</span></div>
+      <div class="org">Beyond the code</div>
+      <ul><li>IEEE Student Member — CHRIST Chapter · organizing team, Gateways Hackathon 2025</li>
+      <li>NCC 'A' Certificate · event anchor for technical fests, seminars, and cultural programs</li>
+      <li>Quantum Technologies for Business (AQSN) · Machine Learning A–Z (Udemy)</li></ul>
+    </div></div>
+  </div>
+</section>
+
+<section id="contact" class="contact" data-sec="N°005 — Contact">
+  <div class="cta-stage" id="ctastage">
+    <div class="idx" style="justify-content:center"><b>N°005</b> Contact</div>
+    <div class="big-cta" id="bigcta">LET'S <span class="o" id="ctao">TALK</span></div>
+    <p class="sub" id="ctasub" style="margin:0 auto">Have a role, a project, or an idea? Drop a message — it lands straight in my inbox and I reply within 24 hours.</p>
+  </div>
+  <div class="contact-wrap">
+    <div class="c-links fade-up">
+      <a href="mailto:jabijiya04@gmail.com"><span>Email</span><span>jabijiya04@gmail.com</span></a>
+      <a href="https://github.com/jelza04" target="_blank"><span>GitHub</span><span>github.com/jelza04</span></a>
+      <a href="https://www.linkedin.com/in/jiya-elza-jabi" target="_blank"><span>LinkedIn</span><span>linkedin.com/in/jiya-elza-jabi</span></a>
+    </div>
+    <form class="fade-up" action="https://formspree.io/f/xvzjdree" method="POST" id="cform">
+      <label>Your name</label>
+      <input type="text" name="name" placeholder="your name" required>
+      <label>Email or phone</label>
+      <input type="text" name="contact" placeholder="yourname@company.com" required>
+      <label>Message</label>
+      <textarea name="message" placeholder="Hi Jiya, we'd love to talk about..." required></textarea>
+      <button type="submit" class="send">Send message →</button>
+      <div class="form-note">Powered by Formspree — messages land directly in my email.</div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><span>© 2026 Jiya Elza Jabi</span><span>Designed & built with ♥</span></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
