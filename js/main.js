@@ -14,7 +14,8 @@ gsap.to(c,{v:100,duration:1.4,ease:'power2.inOut',
   onComplete(){loader.classList.add('done');lenis.start();
     gsap.to('#wire1',{strokeDashoffset:0,duration:2.6,ease:'power2.inOut',delay:.2});
     gsap.to('#wire2',{strokeDashoffset:0,duration:2.6,ease:'power2.inOut',delay:.55});
-    gsap.from('.hero-top>*',{opacity:0,y:26,duration:1,stagger:.14,delay:.4,ease:'power3.out'});
+    gsap.from('.hero-top>*:not(.hi)',{opacity:0,y:26,duration:1,stagger:.14,delay:.55,ease:'power3.out'});
+    typeHero();
   }});
 
 const dot=document.getElementById('cdot');
@@ -284,3 +285,17 @@ function hideGn(){if(gn&&gn.style.opacity!=='0'){gn.style.opacity='0';setTimeout
 window.__hideGn=hideGn;
 document.getElementById('gnclose').addEventListener('click',hideGn);
 setTimeout(hideGn,16000);
+
+function typeHero(){
+  const el=document.getElementById('typeline'),caret=document.getElementById('caret');
+  const parts=[{t:"Hi! I'm ",c:''},{t:'Jiya',c:'name'}];
+  let pi=0,ci=0,node=null;
+  (function step(){
+    if(pi>=parts.length){caret.classList.add('done');return}
+    const p=parts[pi];
+    if(!node){node=document.createElement('span');if(p.c)node.className=p.c;el.appendChild(node)}
+    node.textContent=p.t.slice(0,++ci);
+    if(ci>=p.t.length){pi++;ci=0;node=null;setTimeout(step,pi<parts.length?260:0)}
+    else setTimeout(step,72+Math.random()*55);
+  })();
+}
